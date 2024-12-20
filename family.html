@@ -1,0 +1,237 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAMILY</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #2c003e, #1a0030);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            background: linear-gradient(135deg, #1a0030, #32004b);
+            color: #ff6cf3;
+            text-align: center;
+            padding: 20px 0;
+            margin: 0;
+            font-size: 36px;
+        }
+
+        nav {
+            background-color: #32004b;
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px;
+            transition: color 0.3s, background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #ff6cf3;
+            color: #32004b;
+            border-radius: 5px;
+        }
+
+        .section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+            width: 100%;
+            padding: 20px;
+            background: linear-gradient(135deg, #1a0030, #32004b);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .family_section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;           
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(48, 0, 72, 0.8);
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .family_section:hover {
+            transform: scale(1.02);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .section_title {
+            font-size: 28px;
+            font-weight: bold;
+            text-align: center;
+            color: #ff6cf3;
+        }
+
+        .content {
+            flex: 1;
+            max-width: 60%;
+            color: #fff;
+        }
+
+        .custom_marker_list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .custom_marker_list li {
+            position: relative;
+            margin-bottom: 10px;
+            padding-left: 25px;
+        }
+
+        .custom_marker_list li::before {
+            content: "\2022"; 
+            color: #ff6cf3; 
+            font-size: 20px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .images {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .img {
+            width: 150px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            object-fit: cover;
+        }
+
+        .img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #ff6cf3;
+        }
+
+        footer {
+            background: linear-gradient(135deg, #1a0030, #32004b);
+            text-align: center;
+            padding: 15px 0;
+            width: 100%;
+            color: #ff6cf3;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #ff6cf3;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>FAMILY</h1>
+
+    <nav>
+	<a href="homepage.html">Homepage</a>
+        <a href="#myDad">My Dad</a>
+        <a href="#myMom">My Mom</a>
+        <a href="#mySister">My Sister</a>
+        <a href="#myBrother">My Brother</a>
+    </nav>
+
+    <div class="family_section" id="myDad">
+        <div class="content">
+            <div class="section_title">MY DAD</div>
+            <ul class="custom_marker_list">
+                <li><strong>Name:</strong> Mohd Nadzir bin Muhamad</li>
+                <li><strong>Date of birth:</strong> November 26, 1965</li>
+                <li><strong>Date of death:</strong> March 24, 2023</li>
+                <li><strong>Place of birth:</strong> Bachok, Kelantan</li>
+            </ul>
+        </div>
+        <div class="images">
+            <img src="images/abah.jpeg" alt="Abah" class="img">
+            <img src="images/abah2.jpeg" alt="Abah" class="img">
+            <img src="images/abah3.jpeg" alt="Abah" class="img">
+        </div>
+    </div>
+
+    <div class="family_section" id="myMom">
+        <div class="content">
+            <div class="section_title">MY MOM</div>
+            <ul class="custom_marker_list">
+                <li><strong>Name:</strong> Rusnita binti Mat Said</li>
+                <li><strong>Date of birth:</strong> April 23, 1976</li>
+                <li><strong>Place of birth:</strong> Besut, Terengganu</li>
+            </ul>
+        </div>
+        <div class="images">
+            <img src="images/umi1.jpeg" alt="umi" class="img">
+            <img src="images/umi2.jpeg" alt="umi" class="img">
+            <img src="images/umi3.jpeg" alt="umi" class="img">
+        </div>
+    </div>
+
+    <div class="family_section" id="mySister">
+        <div class="content">
+            <div class="section_title">MY SISTER</div>
+            <ul class="custom_marker_list">
+                <li><strong>Name:</strong>Nur Wahyu Izzaty, Nur Wahyu Syahirah</li>
+                <li><strong>Date of birth:</strong> April 24, 2000, March 7, 2008</li>
+                <li><strong>Place of birth:</strong> Kota Bharu, Kelantan, Kuala Lipis, Pahang</li>
+            </ul>
+        </div>
+        <div class="images">
+            <img src="images/adik1.jpeg" alt="adik" class="img">
+            <img src="images/adik2.jpeg" alt="adik" class="img">
+            <img src="images/adik3.jpeg" alt="adik" class="img">
+        </div>
+    </div>
+
+    <div class="family_section" id="myBrother">
+        <div class="content">
+            <div class="section_title">MY BROTHER</div>
+            <ul class="custom_marker_list">
+                <li><strong>Name:</strong> Muhammad Zakuan</li>
+                <li><strong>Date of birth:</strong> December, 2001</li>
+                <li><strong>Place of birth:</strong> Kuala Lipis, Pahang</li>
+            </ul>
+        </div>
+        <div class="images">
+            <img src="images/angah1.jpeg" alt="angah" class="img">
+            <img src="images/angah2.jpeg" alt="angah" class="img">
+            <img src="images/angah3.jpeg" alt="angah" class="img">
+        </div>
+    </div>
+
+      <footer>
+        <p>&copy; 2024 Nur Wahyu Afwah binti Mohd Nadzir. All Rights Reserved.</p>
+        <p>
+            WhatsApp: <a href="https://wa.me/60189029102" target="_blank">+60189029102</a><br>
+            Instagram: <a href="https://instagram.com/waooooooowa" target="_blank">@waooooooowa</a>
+        </p>
+    </footer>
+</body>
+</html>
+
+

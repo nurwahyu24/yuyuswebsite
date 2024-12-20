@@ -1,0 +1,178 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALLERY</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #2c003e, #1a0030);
+            color: #fff;
+            margin: 0;
+            padding: 0
+        }
+        h1 {
+            background: linear-gradient(135deg, #1a0030, #32004b);
+            color: #ff6cf3;
+            text-align: center;
+            padding: 20px 0;
+            margin: 0;
+            font-size: 36px;
+        }
+	 nav {
+            background-color: #32004b;
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px;
+            transition: color 0.3s, background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #ff6cf3;
+            color: #32004b;
+            border-radius: 5px;
+	}
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+            width: 100%;
+            padding: 20px;
+            background-color: linear-gradient(145deg, #302b63, #24243e);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .gallery_section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;           
+            margin: 20px;
+            padding: 20px;
+            background: rgba(48, 0, 72, 0.8);
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+        .gallery_section:hover {
+            transform: scale(1.02);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .section_title {
+            font-size: 24px;
+            font-weight: bold;
+            width: 100%;
+            text-align: center;
+            border-bottom: 2px solid #444;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: #ff6cf3;
+        }
+       
+        .gallery img {
+            display: block; 
+            max-width: 10%;
+            height: auto;
+            margin: 20px; 
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery video {
+            margin: 10px;
+            width: 25%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        }
+        .gallery img:hover,
+        .gallery video:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #ff6cf3;
+        }
+        footer {
+            background: linear-gradient(135deg, #1a0030, #32004b);
+            text-align: center;
+            padding: 15px 0;
+            width: 100%;
+            color: #ff6cf3;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #ff6cf3;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .section:hover {
+            transform: scale(1.02);
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <h1>GALLERY</h1>
+
+    <nav>
+	<a href="homepage.html">Homepage</a>
+        <a href="#me">Me</a></li>
+        <a href="#friends">Friends</a></li>
+        <a href="#videos">Videos</a></li>
+    </nav>
+
+    <div class="gallery">
+        <div class="gallery_section" id="me">
+            <div class="section_title">ME</div>
+            <img src="images/me1.jpeg" alt="Image of me 1">
+            <img src="images/me2.jpeg" alt="Image of me 2">
+            <img src="images/me3.jpeg" alt="Image of me 3">
+            <img src="images/me4.jpeg" alt="Image of me 4">
+            <img src="images/me5.jpeg" alt="Image of me 5">
+            <img src="images/me6.jpeg" alt="Image of me 6">
+        </div>
+
+        <div class="gallery_section" id="friends">
+            <div class="section_title">FRIENDS</div>
+            <img src="images/friend6.jpeg" alt="Image of friend 6">
+            <img src="images/friend1.jpeg" alt="Image of friend 1">
+            <img src="images/friend2.jpeg" alt="Image of friend 2">
+            <img src="images/friend5.jpeg" alt="Image of friend 5">
+            <img src="images/friend3.jpeg" alt="Image of friend 3">
+            <img src="images/friend4.jpeg" alt="Image of friend 4">
+            <img src="images/friend7.jpeg" alt="Image of friend 7">
+        </div>
+
+        <div class="gallery_section" id="videos">
+            <div class="section_title">VIDEOS</div>
+            <video controls width="320" height="180">
+                <source src="video3.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+        </div>
+    </div>
+
+     <footer>
+        <p>&copy; 2024 Nur Wahyu Afwah binti Mohd Nadzir. All Rights Reserved.</p>
+        <p>
+            WhatsApp: <a href="https://wa.me/60189029102" target="_blank">+60189029102</a><br>
+            Instagram: <a href="https://instagram.com/waooooooowa" target="_blank">@waooooooowa</a>
+        </p>
+    </footer>
+</body>
+</html>

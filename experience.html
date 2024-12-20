@@ -1,0 +1,237 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXPERIENCE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #2c003e, #1a0030);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            background: linear-gradient(135deg, #1a0030, #32004b);
+            color: #ff6cf3;
+            text-align: center;
+            padding: 20px 0;
+            margin: 0;
+            font-size: 36px;
+        }
+
+        nav {
+            background-color: #32004b;
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px;
+            transition: color 0.3s, background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #ff6cf3;
+            color: #32004b;
+            border-radius: 5px;
+        }
+
+        .section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: left;
+            margin-top: 20px;
+            width: 100%;
+            padding: 20px;
+            background: linear-gradient(135deg, #1a0030, #32004b);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section:hover {
+            transform: scale(1.02);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .experience_section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: left;
+            width: 100%;
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(48, 0, 72, 0.8);
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .experience_section:hover {
+            transform: scale(1.02);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .section_title {
+            font-size: 24px;
+            font-weight: bold;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ff6cf3;
+        }
+
+        .content {
+            flex: 1;
+            max-width: 60%;
+            color: #fff;
+        }
+
+        .custom_marker_list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .custom_marker_list li {
+            position: relative;
+            margin-bottom: 10px;
+            padding-left: 25px;
+        }
+
+        .custom_marker_list li::before {
+            content: "\2022";
+            color: #ff6cf3;
+            font-size: 20px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .images {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .img {
+            width: 200px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            object-fit: cover;
+        }
+
+        .img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #ff6cf3;
+        }
+
+        footer {
+            background: linear-gradient(135deg, #1a0030, #32004b);
+            text-align: center;
+            padding: 15px 0;
+            width: 100%;
+            color: #ff6cf3;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #ff6cf3;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>EXPERIENCE</h1>
+
+    <nav>
+	<a href="homepage.html">Homepage</a>
+        <a href="#key-in-data">Key In Data</a>
+        <a href="#site-visit">Site Visit</a>
+        <a href="#customer-services">Customer Services</a>
+        <a href="#national-day-parade">National Day Parade</a>
+    </nav>
+
+    <div class="experience_section" id="key-in-data">
+        <div class="content">
+            <div class="section_title">KEY IN DATA</div>
+            <ul class="custom_marker_list">
+                <li><strong>A thorough verification process will be carried out to ensure that the information in the land grant is correctly recorded in the system.</strong></li>
+                <li><strong>Enter eKasih data systematically into a structured Excel spreadsheet, grouped by DUN (state constituency).</strong></li>
+                <li><strong>The flood victims' data has been collected in an Excel file, and my responsibility is to enter it into the SPB (Flood Disaster Management) system.</strong></li>
+            </ul>
+        </div>
+        <div class="images">
+            <img src="images/intern3.jpeg" alt="intern" class="img">
+            <img src="images/intern4.jpeg" alt="intern" class="img">
+        </div>
+    </div>
+
+    <div class="experience_section" id="site-visit">
+        <div class="content">
+            <div class="section_title">SITE VISIT</div>
+            <ul class="custom_marker_list">
+                <li><strong>Made several site visits to various initiatives, including a catfish farming site, a chili culture site, a watermelon cultivation site, and a vending machine initiative.</strong></li>
+                <li><strong>I discovered that the IPR has three major models which are Inisiatif Usahawan Tani (INTAN), Inisiatif Usahawan Makanan (INSAN), and Inisiatif Operator Perkhidmatan (IKHSAN).</strong></li>
+            </ul>
+        </div>
+        <div class="images">
+            <img src="images/sv1.jpeg" alt="sitevisit" class="img">
+            <img src="images/sv2.jpeg" alt="sitevisit" class="img">
+        </div>
+    </div>
+
+    <div class="experience_section" id="customer-services">
+        <div class="content">
+            <div class="section_title">CUSTOMER SERVICES</div>
+            <ul class="custom_marker_list">
+                <li><strong>Customers may need to receive a stamp from the Assistant District Officer.</strong></li>
+                <li><strong>Customers may need to receive a stamp from the Village Head.</strong></li>
+                <li><strong>Customers may request an Ekasih application form.</strong></li>
+            </ul>
+        </div>
+        <div class="images">
+            <img src="images/cs1.jpeg" alt="customer services" class="img">
+            <img src="images/cs2.jpeg" alt="customer services" class="img">
+        </div>
+    </div>
+
+    <div class="experience_section" id="national-day-parade">
+        <div class="content">
+            <div class="section_title">NATIONAL DAY PARADE</div>
+            <ul class="custom_marker_list">
+                <li><strong>Training for the parade lasted 24 days, beginning August 6, 2024, and concluding August 29, 2024.</strong></li>
+                <li><strong>Attend the official rehearsal on August 29, 2024.</strong></li>
+                <li><strong>On August 31, 2024, our contingent assembled early in the morning to take part in the national celebration.</strong></li>
+            </ul>
+        </div>
+        <div class="images">
+            <img src="images/intern5.jpeg" alt="Brother" class="img">
+            <img src="images/intern6.jpeg" alt="Brother" class="img">
+        </div>
+    </div>
+
+     <footer>
+        <p>&copy; 2024 Nur Wahyu Afwah binti Mohd Nadzir. All Rights Reserved.</p>
+        <p>
+            WhatsApp: <a href="https://wa.me/60189029102" target="_blank">+60189029102</a><br>
+            Instagram: <a href="https://instagram.com/waooooooowa" target="_blank">@waooooooowa</a>
+        </p>
+    </footer>
+</body>
+</html>
+

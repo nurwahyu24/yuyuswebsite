@@ -1,0 +1,288 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #2c003e, #1a0030);
+            color: #fff;
+            margin: 0;
+            padding: 0
+        }
+
+        h1 {
+            background: linear-gradient(135deg, #1a0030, #32004b);
+            color: #ff6cf3;
+            text-align: center;
+            padding: 20px 0;
+            margin: 0;
+            font-size: 36px;
+        }
+	nav {
+            background-color: #32004b;
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px;
+            transition: color 0.3s, background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #ff6cf3;
+            color: #32004b;
+            border-radius: 5px;
+	}
+        .img {
+            margin: 10px;
+            width: 28%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        }
+        .img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #ff6cf3;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            width: 90%;
+            margin: auto;
+        }
+        .section {
+            margin: 20px;
+            padding: 20px;
+            width: 100%;
+            background: rgba(48, 0, 72, 0.8);
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .section_content {
+            width: 100%;
+        }
+
+        .section_title {
+            font-size: 28px;
+            font-weight: bold;
+            text-align: center;
+            color: #ff6cf3;
+            border-bottom: 2px solid #444;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: hot pink;
+            border-radius: 8px;
+            table-layout: fixed; 
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #444;
+        }
+
+        th {
+            background: purple;
+            color: #ff6cf3;
+        }
+
+        td {
+            color: #e0e0e0;
+        }
+
+        footer {
+            background: linear-gradient(135deg, #1a0030, #32004b);
+            color: #ff6cf3;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #ff6cf3;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        .see-more {
+            color: #ff6cf3;
+            text-decoration: none;
+        }
+
+        .see-more:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Biodata</h1>
+
+    <nav>
+	<a href="homepage.html">Homepage</a>
+        <a href="#personal-details">Personal Details</a>
+        <a href="#hobbies-interests">Hobbies & Interests</a>
+        <a href="#personal-traits">Personal Traits</a>
+    </nav>
+
+    <div class="container">
+        <div class="section" id="personal-details">
+            <div class="section_content">
+                <div class="section_title">Personal Details</div>
+                <table>
+                    <tr>
+                        <th>Field</th>
+                        <th>Information</th>
+                    </tr>
+                    <tr>
+                        <td>Full Name</td>
+                        <td>Nur Wahyu Afwah binti Mohd Nadzir</td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>Female</td>
+                    </tr>
+                    <tr>
+                        <td>Date of Birth</td>
+                        <td>August 24, 2004</td>
+                    </tr>
+                    <tr>
+                        <td>Age</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>Marital Status</td>
+                        <td>Single</td>
+                    </tr>
+                    <tr>
+                        <td>Nationality</td>
+                        <td>Malaysia</td>
+                    </tr>
+                    <tr>
+                        <td>Religion</td>
+                        <td>Islam</td>
+                    </tr>
+                    <tr>
+                        <td>Contact Number</td>
+                        <td>018-9029102</td>
+                    </tr>
+                    <tr>
+                        <td>Email Address</td>
+                        <td>nurwahyuafwahmohdnadzir@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>Besut, Malaysia</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="section" id="hobbies-interests">
+            <div class="section_content">
+                <div class="section_title">Hobbies & Interests</div>
+                <table>
+                    <tr>
+                        <th>Field</th>
+                        <th>Information</th>
+                    </tr>
+                    <tr>
+                        <td>Hobbies</td>
+                        <td>
+                            <img src="images/kdrama1.jpg" alt="enha" class="img"> <img src="images/kdrama2.jpg" alt="rose" class="img">
+                            <img src="images/kdrama3.jpg" alt="rose" class="img">
+                            <ul>
+                                <li>Watching Korean Drama.</li>
+                                <li>Reading Alternative Universe. An alternate universe (AU) is a creative notion in which idols are reinvented in locations, roles, or tales that differ from their real-life personas.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Interests</td>
+                        <td>
+                            <img src="images/enha1.jpg" alt="enha" class="img"> <img src="images/rose1.jpg" alt="rose" class="img">
+                            <img src="images/billie1.jpg" alt="rose" class="img">
+                            <ul>
+                                <li>I like ENHYPEN, a South Korean boy group. Consist of Jungwon, Heeseung, Jay, Jake, Sunghoon, Sunoo and Ni-Ki.</li>
+                                <li>I like Roseanne Park, known by her stage name Rosé, is a member of the K-pop girl group BLACKPINK.</li>
+                                <li>I like Billie Eilish, she is an American singer-songwriter. </li>
+                                <p><audio controls><source src="song.mp3" type="audio/mpeg"></audio></p>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="section" id="personal-traits">
+            <div class="section_content">
+                <div class="section_title">Personal Traits</div>
+                <table>
+                    <tr>
+                        <th>Field</th>
+                        <th>Information</th>
+                    </tr>
+                    <tr>
+                        <td>Strengths</td>
+                        <td>
+                            <ul>
+                                <li>Adaptability</li>
+                                <li>Patience</li>
+                                <li>Confidence</li>
+                                <li>Emotional intelligence</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Personality Traits</td>
+                        <td>
+                            <ul>
+                                <li>Communicative</li>
+                                <li>Friendly</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+   <footer>
+        <p>&copy; 2024 Nur Wahyu Afwah binti Mohd Nadzir. All Rights Reserved.</p>
+        <p>
+            WhatsApp: <a href="https://wa.me/60189029102" target="_blank">+60189029102</a><br>
+            Instagram: <a href="https://instagram.com/waooooooowa" target="_blank">@waooooooowa</a>
+        </p>
+    </footer>
+</body>
+</html>
+
+
+
